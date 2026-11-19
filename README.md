@@ -1,24 +1,29 @@
 # Forever Character Atlas
 
-Can you design me a modern web page that tracks World of Warcraft Forever Characters, searched by name. I want when you type the name to Visualise in 3D the characther and the items equiped in separate boxes. Use soft shadows, Include with Hero section with WoW Forever Logo,  headline , short tagline, smooth rounded corners, create Search buttons, Name box search bar.
+WoW Forever character armory — search by first and last name, show the official Blizzard portrait, and list equipped gear.
 
-This project was built with [Lovable](https://lovable.dev).
+## Setup
 
-## Build with Lovable
+1. Node.js 22+ (24 recommended)
+2. Copy `.env.example` to `.env` and set:
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/8e594076-4a4b-492e-9a66-a0ccf91f446c).
+```
+BLIZZARD_CLIENT_ID=...
+BLIZZARD_CLIENT_SECRET=...
+```
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+3. Install and run:
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
 npm i
 npm run dev
 ```
+
+Open the local URL Vite prints (default `http://localhost:8080`).
+
+## Scripts
+
+- `npm run dev` — development server
+- `npm run build` — production build
+- `npm run preview` — preview the production build
+- `npm test` — run tests

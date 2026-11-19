@@ -6,7 +6,6 @@ import * as THREE from "three";
 
 import type { HandItem, ModelKey } from "@/lib/character-model";
 
-/** Local copies under public/models (Lovable /__l5e URLs 404 outside their preview proxy). */
 const MODELS: Record<ModelKey, string> = {
   knight: "/models/knight.glb",
   raider: "/models/raider.glb",
